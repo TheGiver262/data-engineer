@@ -1167,6 +1167,7 @@ name = "pipeline"
 version = "0.1.0"
 source = { virtual = "." }
 dependencies = [
+    { name = "click" },
     { name = "panda" },
     { name = "pandas" },
     { name = "psycopg", extra = ["binary", "pool"] },
@@ -1184,6 +1185,7 @@ dev = [
 
 [package.metadata]
 requires-dist = [
+    { name = "click", specifier = ">=8.1.7" },
     { name = "panda", specifier = ">=0.3.1" },
     { name = "pandas", specifier = ">=3.0.1" },
     { name = "psycopg", extras = ["binary", "pool"], specifier = ">=3.3.3" },
